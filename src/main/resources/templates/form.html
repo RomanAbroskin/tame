@@ -18,8 +18,8 @@
 
         <button>Решить</button>
     </form>
-    <p>Metor: [[${MetorKillometr}]]</p>
-    <p>Killometr: [[${KillometrMetor}]]</p>
-    <p>MilleKillometr: [[${MilleKillometr}]]</p>
+    <p th:if="${MetorKillometr != null}">Metor: [[${MetorKillometr}]]</p>
+    <p th:if="${KillometrMetor != null}">Killometr: [[${KillometrMetor}]]</p>
+    <p th:if="${MilleKillometr != null}">MilleKillometr: [[${MilleKillometr}]]</p>
 </body>
 </html>
