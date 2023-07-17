@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:MetorKillometr="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Solve QE!</title>
+</head>
+<body>
+    <form th:method="post" th:action="@{/dz}">
+
+        <label for="input-a">Введите сколько километров:</label>
+        <input type="number" id="input-a" name="killometr"/>
+
+        <label for="input-b">Введите сколько метров:</label>
+        <input type="number" id="input-b" name="metr"/>
+
+        <label for="input-c">Введите сколько милли:</label>
+        <input type="number" id="input-c" name="mile"/>
+
+        <button>Решить</button>
+    </form>
+    <p>Metor: [[${MetorKillometr}]]</p>
+    <p>Killometr: [[${KillometrMetor}]]</p>
+    <p>MilleKillometr: [[${MilleKillometr}]]</p>
+</body>
+</html>
